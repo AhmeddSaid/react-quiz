@@ -9,7 +9,7 @@ function NextButton({ dispatch, answer, index, numQuestions }) {
     );
   if (index < numQuestions)
     return (
-      <button className="btn btn-ui" onClick={() => dispatch({ type: "finish" })}>
+      <button className="finish-btn btn btn-ui" onClick={() => dispatch({ type: "finish" })}>
         Finish
       </button>
     );

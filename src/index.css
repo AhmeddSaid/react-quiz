@@ -266,22 +266,21 @@ progress {
   }
   body {
     padding: 10px;
-    overflow: hidden;
   }
   .main {
     width: 100%;
   }
   .app-header {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     flex-direction: column;
     gap: 10px;
   }
   img {
-    width: 100px;
+    width: 50px;
   }
   h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   h2 {
     font-size: 24px;
@@ -289,7 +288,7 @@ progress {
   h4 {
     text-align: center;
     width: 90%;
-    margin: 30px 20px;
+    margin: 20px;
     font-size: 16px;
   }
   .start {
@@ -304,19 +303,30 @@ progress {
   }
   .options {
     width: 90%;
-    margin: 0 auto 3.2rem;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  .btn-option {
+    font-size: 14px;
   }
   .result {
     margin-top: 200px;
   }
   .timer {
     position: absolute;
-    bottom: 120px;
+    bottom: 80px;
   }
-  .next-btn {
+  .next-btn,
+  .finish-btn {
     position: absolute;
     right: 10px;
     width: 83px;
-    bottom: 120px;
+    bottom: 80px;
+  }
+  .restart-btn {
+    position: absolute;
+    margin: 20px auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
