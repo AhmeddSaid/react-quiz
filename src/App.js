@@ -106,7 +106,7 @@ function App() {
 
   useEffect(function () {
     // hosted json
-    fetch("https://my-json-server.typicode.com/ahmeddsaid/react-quiz/tree/master/data")
+    fetch("https://my-json-server.typicode.com/ahmeddsaid/react-quiz/questions")
       // fetch("http://localhost:8000/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
