@@ -76,13 +76,13 @@ function reducer(state, action) {
       //   status: "ready",
       //   highscore: state.highscore,
       // };
-    return {
-      ...state,
-      status: "active",
-      index: 0,
-      answer: null,
-      points: 0,
-    };
+      return {
+        ...state,
+        status: "active",
+        index: 0,
+        answer: null,
+        points: 0,
+      };
 
     case "tick":
       return {
@@ -106,8 +106,8 @@ function App() {
 
   useEffect(function () {
     // hosted json
-    fetch("https://my-json-server.typicode.com/ahmeddsaid/questions-server/questions")
-    // fetch("http://localhost:8000/questions")
+    fetch("https://my-json-server.typicode.com/ahmeddsaid/react-quiz/tree/master/data")
+      // fetch("http://localhost:8000/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((err) => dispatch({ type: "dataFailed" }));
